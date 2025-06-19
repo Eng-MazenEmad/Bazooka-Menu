@@ -1,0 +1,295 @@
+/*---------To Use External Fonts-----------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: 'Poppins', serif;
+
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  color: #f8f8f8;
+  background-color: #ffe5c9; /* Keeping this as the base color */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Welcome {
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: #d62828; /* Bold red from Bazooka theme */
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.Logo {
+  transform: translateY(1rem);
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
+}
+
+/* Animation Enhancements */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.Logo {
+  animation: float 4s ease-in-out infinite;
+}
+
+header {
+  background-image: linear-gradient(#ffe5c9, #4b3434); /* Dark blue gradient */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+header {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 2px solid rgba(214, 40, 40, 0.3); /* Matching red */
+  margin-bottom: -1.59rem;
+}
+
+header a {
+  font-weight: bold;
+  width: 205px;
+  margin: auto;
+  padding: 2px;
+  color: #f8f8f8;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.Follow {
+  color: #d62828; /* Matching red */
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/*------Social Media & The Arrow------*/
+.headicons,
+#Scroll {
+  cursor: pointer;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1rem;
+}
+
+.headicons a:hover {
+  color: #d62828; /* Matching red */
+  transform: translateY(-3px);
+}
+
+#Scroll {
+  font-size: 4rem;
+  margin-top: 1.5rem;
+  color: #d62828; /* Matching red */
+  transition: all 0.4s ease;
+}
+
+/*-------الضريبة-------*/
+.cation {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  color: #4b3434; /* Dark blue for contrast */
+  transform: translateY(-0.3rem);
+  font-weight: bold;
+  background-color: rgba(214, 40, 40, 0.384); /* Semi-transparent red */
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+}
+
+
+
+/*------------------------Scroll Up Btn---------------------*/
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: linear-gradient(-45deg,#d62828, #a00404); /* Ivory to terracotta gradient */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 999;
+}
+#scrollToTopBtn:hover {
+  color: black;
+  background-image: linear-gradient(-45deg,#a00404, #d62828); /* Ivory to terracotta gradient */
+}
+#scrollToTopBtn.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+
+/*------------------------Footer Styling---------------------*/
+footer {
+  overflow-x: hidden;
+  background: #4b3434; /* Dark blue */
+  background-image: linear-gradient(#4b3434, #140202);
+  width: 100%;
+  position: relative;
+}
+
+/*------------------------Footer Curved BG Styling---------------------*/
+.custom-shape-divider-top .shape-fill {
+  fill: #ffe5c9;
+}
+
+/*------------------------Upper Footer Styling-----------------*/
+.footercontainer {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12rem;
+}
+
+.footer-content {
+  width: 33.33%;
+}
+
+footer h3 {
+  font-size: 28px;
+  color: #d62828; /* Matching red */
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#footercontact{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-content p {
+  font-weight: bold;
+  padding: 10px;
+  color: #f8f8f8;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.footer-content a {
+  font-weight: bold;
+  width: 205px;
+  margin: auto;
+  padding: 2px;
+  color: #f8f8f8;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+#footerfollow{
+  padding-bottom: 2rem;
+}
+
+.footer-content a:hover {
+  color: #d62828; /* Matching red */
+  transform: translateX(5px);
+}
+
+.social-icons {
+  justify-content: center;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.social-icons li {
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+  transition: all 0.3s ease;
+}
+
+.social-icons li:hover {
+  transform: scale(1.1);
+}
+
+.github a:hover {
+  color: #333;
+}
+
+.instagram a:hover {
+  color: #e1306c;
+}
+
+/*---------------------Lower Footer Styling-----------------*/
+.bottom-bar {
+  background: #1402020c;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.bottom-bar p {
+  color: #f8f8f8;
+  margin: 0;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+/* Tablet Responsive Adjustments (600px - 1024px) */
+@media only screen and (max-width: 1024px) {
+  .footercontainer {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+  
+  .footer-content {
+    width: 100%;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  #footerfollow {
+    width: 100%;
+    margin-bottom: 0rem;
+    text-align: center;
+  }
+  
+  #footerlogo {
+    height: 15rem;
+    transform: translate(-0.5rem,0);
+  }
+}
+
+/* Mobile Responsive Adjustments (below 600px) */
+@media only screen and (max-width: 600px) {
+  .footercontainer {
+    padding: 1rem;
+  }
+  
+  .footer-content {
+    margin-bottom: 1.5rem;
+  }
+  
+  #footerlogo {
+    height: 15rem;
+    transform: none;
+  }
+  
+}
